@@ -130,7 +130,7 @@ public class ConversorDeTemperatura extends JFrame {
 		panel.add(textField, gbc_textField);
 		textField.setColumns(10);
 		
-		JLabel lblTemperaturaEmFahrenheight = new JLabel("Temperatura em Fahrenheight:");
+		JLabel lblTemperaturaEmFahrenheight = new JLabel("Temperatura em Fahrenheit:");
 		GridBagConstraints gbc_lblTemperaturaEmFahrenheight = new GridBagConstraints();
 		gbc_lblTemperaturaEmFahrenheight.anchor = GridBagConstraints.WEST;
 		gbc_lblTemperaturaEmFahrenheight.insets = new Insets(0, 0, 5, 5);
@@ -138,7 +138,7 @@ public class ConversorDeTemperatura extends JFrame {
 		gbc_lblTemperaturaEmFahrenheight.gridy = 1;
 		panel.add(lblTemperaturaEmFahrenheight, gbc_lblTemperaturaEmFahrenheight);
 		
-		// Fahrenheight
+		// Fahrenheit
 		textField_1 = new JTextField();
 		textField_1.setEditable(false);
 		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
@@ -204,10 +204,10 @@ public class ConversorDeTemperatura extends JFrame {
 		panel_1.add(rdbtnCelsius, gbc_rdbtnCelsius);
 		buttonGroup.add(rdbtnCelsius);
 		
-		rdbtnFahrenheight = new JRadioButton("Fahrenheight");
+		rdbtnFahrenheight = new JRadioButton("Fahrenheit");
 		rdbtnFahrenheight.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				selecionado = "Fahrenheight";
+				selecionado = "Fahrenheit";
 				textField.setEditable(false);
 				textField_1.setEditable(true);
 				textField_2.setEditable(false);
@@ -258,9 +258,9 @@ public class ConversorDeTemperatura extends JFrame {
 					textField_1.setText(Converter.resultadoFahrenheightdeCelsius);
 					textField_2.setText(Converter.resultadoKelvindeCelsius);
 				}
-				else if (selecionado == "Fahrenheight") {
+				else if (selecionado == "Fahrenheit") {
 					campoFahrenheight = textField_1.getText();
-					Converter.FahrenheightConv();
+					Converter.FahrenheitConv();
 					textField.setText(Converter.resultadoCelsiusdeFahrenheight);
 					textField_2.setText(Converter.resultadoKelvindeFahrenheight);
 				}

@@ -32,7 +32,7 @@ public class Converter {
 		resultadoKelvindeCelsius = String.valueOf(paraKelvindeCelsius);
 	}
 	
-	public static void FahrenheightConv() {
+	public static void FahrenheitConv() {
 		campoFahrenheightInt = Integer.parseInt(ConversorDeTemperatura.campoFahrenheight);
 		paraCelsiusdeFahrenheight = (campoFahrenheightInt - 32) * 5/9;
 		paraKelvindeFahrenheight = (campoFahrenheightInt + 459.67) * 5/9;
