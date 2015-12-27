@@ -2,21 +2,21 @@ package com.ConversorDeTemperatura;
 
 public class Converter {
 	
-	// Conversão de Celsius para Fahrenheight e Kelvin
+	// Conversão de Celsius para Fahrenheit e Kelvin
 	static double campoCelsiusDouble;
 	static double paraFahrenheitdeCelsius;
 	static double paraKelvindeCelsius;
 	static String resultadoFahrenheitdeCelsius;
 	static String resultadoKelvindeCelsius;
 	
-	// Conversão de Fahrenheight para Celsius e Kelvin
+	// Conversão de Fahrenheit para Celsius e Kelvin
 	static double campoFahrenheitDouble;
 	static double paraCelsiusdeFahrenheit;
 	static double paraKelvindeFahrenheit;
 	static String resultadoCelsiusdeFahrenheit;
 	static String resultadoKelvindeFahrenheit;
 	
-	// Conversão de Kelvin para Celsius e Fahrenheight
+	// Conversão de Kelvin para Celsius e Fahrenheit
 	static double campoKelvinDouble;
 	static double paraCelsiusdeKelvin;
 	static double paraFahrenheitdeKelvin;
