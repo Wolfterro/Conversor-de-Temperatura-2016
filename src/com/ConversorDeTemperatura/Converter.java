@@ -3,51 +3,51 @@ package com.ConversorDeTemperatura;
 public class Converter {
 	
 	// Conversão de Celsius para Fahrenheight e Kelvin
-	static int campoCelsiusInt;
-	static int paraFahrenheightdeCelsius;
+	static double campoCelsiusDouble;
+	static double paraFahrenheitdeCelsius;
 	static double paraKelvindeCelsius;
-	static String resultadoFahrenheightdeCelsius;
+	static String resultadoFahrenheitdeCelsius;
 	static String resultadoKelvindeCelsius;
 	
 	// Conversão de Fahrenheight para Celsius e Kelvin
-	static int campoFahrenheightInt;
-	static int paraCelsiusdeFahrenheight;
-	static double paraKelvindeFahrenheight;
-	static String resultadoCelsiusdeFahrenheight;
-	static String resultadoKelvindeFahrenheight;
+	static double campoFahrenheitDouble;
+	static double paraCelsiusdeFahrenheit;
+	static double paraKelvindeFahrenheit;
+	static String resultadoCelsiusdeFahrenheit;
+	static String resultadoKelvindeFahrenheit;
 	
 	// Conversão de Kelvin para Celsius e Fahrenheight
 	static double campoKelvinDouble;
 	static double paraCelsiusdeKelvin;
-	static double paraFahrenheightdeKelvin;
+	static double paraFahrenheitdeKelvin;
 	static String resultadoCelsiusdeKelvin;
-	static String resultadoFahrenheightdeKelvin;
+	static String resultadoFahrenheitdeKelvin;
 	
 	public static void CelsiusConv() {
-		campoCelsiusInt = Integer.parseInt(ConversorDeTemperatura.campoCelsius);
-		paraFahrenheightdeCelsius = campoCelsiusInt * 9/5 + 32;
-		paraKelvindeCelsius = campoCelsiusInt + 273.15;
+		campoCelsiusDouble = Double.parseDouble(ConversorDeTemperatura.campoCelsius);
+		paraFahrenheitdeCelsius = campoCelsiusDouble * 9/5 + 32;
+		paraKelvindeCelsius = campoCelsiusDouble + 273.15;
 		
-		resultadoFahrenheightdeCelsius = String.valueOf(paraFahrenheightdeCelsius);
+		resultadoFahrenheitdeCelsius = String.valueOf(paraFahrenheitdeCelsius);
 		resultadoKelvindeCelsius = String.valueOf(paraKelvindeCelsius);
 	}
 	
 	public static void FahrenheitConv() {
-		campoFahrenheightInt = Integer.parseInt(ConversorDeTemperatura.campoFahrenheight);
-		paraCelsiusdeFahrenheight = (campoFahrenheightInt - 32) * 5/9;
-		paraKelvindeFahrenheight = (campoFahrenheightInt + 459.67) * 5/9;
+		campoFahrenheitDouble = Double.parseDouble(ConversorDeTemperatura.campoFahrenheit);
+		paraCelsiusdeFahrenheit = (campoFahrenheitDouble - 32) * 5/9;
+		paraKelvindeFahrenheit = (campoFahrenheitDouble + 459.67) * 5/9;
 		
-		resultadoCelsiusdeFahrenheight = String.valueOf(paraCelsiusdeFahrenheight);
-		resultadoKelvindeFahrenheight = String.valueOf(paraKelvindeFahrenheight);
+		resultadoCelsiusdeFahrenheit = String.valueOf(paraCelsiusdeFahrenheit);
+		resultadoKelvindeFahrenheit = String.valueOf(paraKelvindeFahrenheit);
 	}
 	
 	public static void KelvinConv() {
 		campoKelvinDouble = Double.parseDouble(ConversorDeTemperatura.campoKelvin);
 		paraCelsiusdeKelvin = campoKelvinDouble - 273.15;
-		paraFahrenheightdeKelvin = campoKelvinDouble * 9/5 - 459.67;
+		paraFahrenheitdeKelvin = campoKelvinDouble * 9/5 - 459.67;
 		
 		resultadoCelsiusdeKelvin = String.valueOf(paraCelsiusdeKelvin);
-		resultadoFahrenheightdeKelvin = String.valueOf(paraFahrenheightdeKelvin);
+		resultadoFahrenheitdeKelvin = String.valueOf(paraFahrenheitdeKelvin);
 	}
 	
 	public static void main(String[] args) {

@@ -34,7 +34,7 @@ public class ConversorDeTemperatura extends JFrame {
 	private JTextField textField_2;
 	private JPanel panel;
 	private JRadioButton rdbtnCelsius;
-	private JRadioButton rdbtnFahrenheight;
+	private JRadioButton rdbtnFahrenheit;
 	private JRadioButton rdbtnKelvin;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 	private JPanel panel_1;
@@ -42,7 +42,7 @@ public class ConversorDeTemperatura extends JFrame {
 	private String selecionado;
 	
 	static String campoCelsius;
-	static String campoFahrenheight;
+	static String campoFahrenheit;
 	static String campoKelvin;
 	
 	/*
@@ -204,8 +204,8 @@ public class ConversorDeTemperatura extends JFrame {
 		panel_1.add(rdbtnCelsius, gbc_rdbtnCelsius);
 		buttonGroup.add(rdbtnCelsius);
 		
-		rdbtnFahrenheight = new JRadioButton("Fahrenheit");
-		rdbtnFahrenheight.addActionListener(new ActionListener() {
+		rdbtnFahrenheit = new JRadioButton("Fahrenheit");
+		rdbtnFahrenheit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				selecionado = "Fahrenheit";
 				textField.setEditable(false);
@@ -222,8 +222,8 @@ public class ConversorDeTemperatura extends JFrame {
 		gbc_rdbtnFahrenheight.insets = new Insets(0, 0, 5, 0);
 		gbc_rdbtnFahrenheight.gridx = 0;
 		gbc_rdbtnFahrenheight.gridy = 1;
-		panel_1.add(rdbtnFahrenheight, gbc_rdbtnFahrenheight);
-		buttonGroup.add(rdbtnFahrenheight);
+		panel_1.add(rdbtnFahrenheit, gbc_rdbtnFahrenheight);
+		buttonGroup.add(rdbtnFahrenheit);
 		
 		rdbtnKelvin = new JRadioButton("Kelvin");
 		rdbtnKelvin.setActionCommand("Kelvin");
@@ -255,20 +255,20 @@ public class ConversorDeTemperatura extends JFrame {
 				else if (selecionado == "Celsius") {
 					campoCelsius = textField.getText();
 					Converter.CelsiusConv();
-					textField_1.setText(Converter.resultadoFahrenheightdeCelsius);
+					textField_1.setText(Converter.resultadoFahrenheitdeCelsius);
 					textField_2.setText(Converter.resultadoKelvindeCelsius);
 				}
 				else if (selecionado == "Fahrenheit") {
-					campoFahrenheight = textField_1.getText();
+					campoFahrenheit = textField_1.getText();
 					Converter.FahrenheitConv();
-					textField.setText(Converter.resultadoCelsiusdeFahrenheight);
-					textField_2.setText(Converter.resultadoKelvindeFahrenheight);
+					textField.setText(Converter.resultadoCelsiusdeFahrenheit);
+					textField_2.setText(Converter.resultadoKelvindeFahrenheit);
 				}
 				else if (selecionado == "Kelvin") {
 					campoKelvin = textField_2.getText();
 					Converter.KelvinConv();
 					textField.setText(Converter.resultadoCelsiusdeKelvin);
-					textField_1.setText(Converter.resultadoFahrenheightdeKelvin);
+					textField_1.setText(Converter.resultadoFahrenheitdeKelvin);
 				}
 				else {
 					JOptionPane.showMessageDialog(null, "Ocorreu um erro! Encerre o programa e tente novamente!");
