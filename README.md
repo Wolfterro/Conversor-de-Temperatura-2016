@@ -8,6 +8,9 @@
 
 ###### O programa é capaz de converter temperaturas em graus Celsius, graus Fahrenheit e Kelvin entre si.
 
+### Requisitos:
+ - Java 7 ou superior
+
 ### Download:
 
 ###### O programa já compilado pode ser baixado diretamente através deste [link!](https://raw.github.com/Wolfterro/Conversor-de-Temperatura-2016/master/Conversor-de-Temperatura-2016.jar)
